@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  font-family: 'Poppins', monospace;
+}
+
+body {
+  background-color: black;
+  margin: 25px;
+}
+
+@font-face {
+  font-family: 'Bavista';
+  src: url('./fonts/Bavista_Soulare.ttf')
+}
+
+#languages-list {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin: 0 auto; 
+  text-transform: uppercase;
+}
+
+.language-list-item {
+  text-align: center;
+  flex: 1 225px; /* each item takes up a minimum of 200px */
+  margin: 10px;
+} 
+
+
+@media only screen and (max-width: 400px) {
+  #languages-list {
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #language-list {
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+

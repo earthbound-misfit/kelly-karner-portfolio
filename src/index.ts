@@ -1,0 +1,7 @@
+export * from './About'
+export * from './Contact'
+export * from './Footer'
+export * from './Project1'
+export * from './Project2'
+export * from './Skills'
+export * from './ScrollToTop'
