@@ -24,15 +24,6 @@ const projects = [
     livePreview: 'https://github.com',
   },
   {
-    title: 'AWS Cloud Portfolio',
-    image: './src/assets/img/awscloudportfolio.png',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['TypeScript', 'React', 'Mantine', 'CSS', 'Vite'],
-    sourceCode: 'https://github.com/earthbound-misfit/kelly-karner-portfolio',
-    livePreview: 'http://127.0.0.1:5173/',
-  },
-  {
     title: 'CarShare Application',
     image: './src/assets/img/carshare.png',
     description:
@@ -40,6 +31,15 @@ const projects = [
     stack: ['TypeScript', 'React', 'HTML', 'CSS', 'Material UI', 'Python', 'Flask'],
     sourceCode: 'https://github.com/earthbound-misfit/carshare-dashboard',
     livePreview: 'https://classic-carshare-react.firebaseapp.com/',
+  },
+   {
+    title: 'AWS Cloud Portfolio',
+    image: './src/assets/img/awscloudportfolio.png',
+    description:
+      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    stack: ['TypeScript', 'React', 'Mantine', 'CSS', 'Vite'],
+    sourceCode: 'https://github.com/earthbound-misfit/kelly-karner-portfolio',
+    livePreview: 'http://127.0.0.1:5173/',
   },
   {
     title: 'BookWorm',
