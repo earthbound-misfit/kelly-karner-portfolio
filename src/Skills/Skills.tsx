@@ -1,6 +1,8 @@
 import { Grid, Paper, Flex, SimpleGrid, Group } from '@mantine/core';
 import '../main.css'
 
+
+
 export const Skills = () => {
   return (
     <>
