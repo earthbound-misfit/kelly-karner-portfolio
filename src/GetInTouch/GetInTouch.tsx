@@ -17,12 +17,12 @@ import '../main.css'
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
-    alignContent: 'center',
     border: '2px solid white',
     boxSizing: 'border-box',
     marginTop: '1rem',
     borderRadius: theme.radius.lg,
     padding: '3rem',
+ 
   },
 
   title: {
@@ -30,6 +30,8 @@ const useStyles = createStyles((theme) => ({
     color: theme.white,
     lineHeight: 1,
     textAlign: 'center',
+    justifyContent: 'center',
+    marginTop: '4rem'
   },
 
   description: {
@@ -42,7 +44,8 @@ const useStyles = createStyles((theme) => ({
   },
 
   form: {
-    backgroundColor: theme.white,
+    backgroundColor: theme.black,
+   
     padding: theme.spacing.xl,
     borderRadius: '13px',
     boxShadow: theme.shadows.lg,
@@ -59,18 +62,18 @@ const useStyles = createStyles((theme) => ({
 
   input: {
     backgroundColor: theme.white,
-    borderColor: theme.colors.gray[4],
     color: theme.black,
+    fontFamily: 'Poppins',
     borderRadius: theme.radius.md,
     padding: '5px 10px',
 
     '&::placeholder': {
-      color: theme.colors.gray[5],
+      color: theme.white,
     },
   },
 
   inputLabel: {
-    color: theme.black,
+    color: theme.white,
   },
 
   send: {
@@ -82,10 +85,11 @@ const useStyles = createStyles((theme) => ({
     minHeight: '50px',
     fontFamily: 'Poppins',
     fontWeight: 600,
+    border: '1px solid white',
    
     '&:hover': {
-      opacity: '80%',
-      backgroundColor: '#20b2aa',
+      backgroundColor: '#fff',
+      color: theme.black,
       transition: '0.3s',
     }
 
@@ -104,9 +108,9 @@ export const GetInTouch = () => {
   ));
   return (
         <div className={classes.wrapper} style={{marginTop: '1rem'}}>
-      <SimpleGrid cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+      <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
         <div>
-          <Title className={classes.title}>Contact me</Title>
+          <Title className={classes.title}>Get in Touch</Title>
         
 
           {/* <ContactIconsList variant="white" /> */}
