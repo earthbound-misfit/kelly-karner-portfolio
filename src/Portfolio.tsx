@@ -54,22 +54,22 @@ const projects = [
 ]
 
 const skills = [
+  'HTML/CSS',
   'JavaScript',
   'TypeScript',
   'React',
   'Vite',
-  'HTML',
-  'CSS',
-  'Sass',
-  'Bootstrap',
-  'Mantine',
   'Material UI',
-  'Redux',
+  'Mantine',
+  'Sass',
   'Python',
+  'Flask',
   'SQL',
   'PostgreSQL',
-  'Firebase',
+  'NoSQL',
   'Git/Github',
+  'AWS',
+  'Redux',
 ]
 
 const contact = {

@@ -1,15 +1,40 @@
 import React from 'react';
-import { Button } from '@mantine/core';
+import { UnstyledButton, createStyles } from '@mantine/core';
+
+const useStyles = createStyles({
+  buttonStyling: {
+    borderRadius: '25px', 
+    backgroundColor: 'black',
+    fontFamily: 'Poppins',
+    fontWeight: 600, 
+    color: 'white',
+    padding: '10px 30px',
+    '&:hover': {
+      backgroundColor: 'white',
+      color: 'black',
+      transition: '0.3s',
+      border: '1.5px solid black',
+    }
+  }
+})
 
 export const Contact = () => {
+  const { classes } = useStyles()
+
   return (
     <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', height: '100%'}}>
       <div style={{alignSelf: 'center', fontSize: '1.4rem'}}>
-        <a href="src/assets/pdf/KellyKarner_SoftwareDeveloper_Resume.pdf"><Button className="contact" style={{borderRadius: '25px', backgroundColor: 'black'}} size="lg">Resume</Button></a>
+        <a href="src/assets/pdf/KellyKarner_SoftwareDeveloper_Resume.pdf">
+          <UnstyledButton className={classes.buttonStyling}>
+            Resume
+          </UnstyledButton>
+        </a>
         
       </div>
       <div style={{alignSelf: 'center', fontSize: '1.4rem'}}>
-        <Button className="contact" style={{borderRadius: '25px', backgroundColor: 'black', padding: '0 15px 0 15px'}} size="lg" border-radius="20px">Get in Touch</Button>
+        <UnstyledButton className={classes.buttonStyling}>
+          Get in Touch
+        </UnstyledButton>
       </div>
 
     </div>

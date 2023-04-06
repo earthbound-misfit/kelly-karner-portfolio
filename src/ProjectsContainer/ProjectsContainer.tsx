@@ -33,6 +33,7 @@ export const ProjectsContainer = () => {
   const {classes} = useStyles();
 
   const projectCards = projects.map((project) => (
+    <div>
     <Card id="project-card" key={project.title} radius="lg" component="a" href="#" className={classes.card}>
       {/* <Text className={classes.title} mt={5}>
         {project.title}
@@ -42,6 +43,9 @@ export const ProjectsContainer = () => {
         <Image radius="lg" src={project.image} />
       {/* </AspectRatio> */}
     </Card>
+     
+    </div>
+   
   ))
   return (
     <>

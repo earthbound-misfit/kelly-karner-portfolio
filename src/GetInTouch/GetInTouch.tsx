@@ -6,12 +6,13 @@ import {
   SimpleGrid,
   TextInput,
   Textarea,
-  Button,
+  UnstyledButton,
   Group,
   ActionIcon,
   rem,
 } from '@mantine/core';
 import { IconBrandLinkedin, IconBrandInstagram, IconBrandGithub } from '@tabler/icons-react';
+import '../main.css'
 
 
 const useStyles = createStyles((theme) => ({
@@ -34,6 +35,7 @@ const useStyles = createStyles((theme) => ({
     fontFamily: `Poppins, ${theme.fontFamily}`,
     color: theme.white,
     lineHeight: 1,
+    textAlign: 'center',
   },
 
   description: {
@@ -48,7 +50,7 @@ const useStyles = createStyles((theme) => ({
   form: {
     backgroundColor: theme.white,
     padding: theme.spacing.xl,
-    borderRadius: theme.radius.md,
+    borderRadius: '13px',
     boxShadow: theme.shadows.lg,
   },
 
@@ -56,15 +58,16 @@ const useStyles = createStyles((theme) => ({
     color: theme.white,
 
     '&:hover': {
-      color: 'aqua',
+      color: '#20b2aa',
     },
- 
   },
 
   input: {
     backgroundColor: theme.white,
     borderColor: theme.colors.gray[4],
     color: theme.black,
+    borderRadius: theme.radius.lg,
+    padding: '5px 10px',
 
     '&::placeholder': {
       color: theme.colors.gray[5],
@@ -75,11 +78,22 @@ const useStyles = createStyles((theme) => ({
     color: theme.black,
   },
 
-  control: {
+  send: {
     backgroundColor: 'black',
     borderRadius: '25px',
     color: 'white',
     width: '100%',
+    textAlign: 'center',
+    minHeight: '50px',
+    fontFamily: 'Poppins',
+    fontWeight: 600,
+   
+    '&:hover': {
+      opacity: '80%',
+      backgroundColor: '#20b2aa',
+      transition: '0.3s',
+    }
+
   },
 }));
 
@@ -98,13 +112,11 @@ export const GetInTouch = () => {
       <SimpleGrid cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
         <div>
           <Title className={classes.title}>Contact me</Title>
-          <Text className={classes.description} mt="sm" mb={30}>
-            Leave your email and a message, and I will get back to you within 24 hours
-          </Text>
+        
 
           {/* <ContactIconsList variant="white" /> */}
 
-          <Group mt="xl">{icons}</Group>
+          <Group className="contact-and-icons" mt="xl">{icons}</Group>
         </div>
         <div className={classes.form}>
           <TextInput
@@ -129,7 +141,9 @@ export const GetInTouch = () => {
           />
 
           <Group position="right" mt="md">
-            <Button className={classes.control}>Send message</Button>
+            <UnstyledButton
+              className={classes.send}
+              >Send message</UnstyledButton>
           </Group>
         </div>
       </SimpleGrid>

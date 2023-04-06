@@ -1,49 +1,55 @@
-import { Grid, Paper, Flex, SimpleGrid, Group } from '@mantine/core';
-import '../main.css'
+
+import { Grid, Col, Group, createStyles, Paper, UnstyledButton, Text } from '@mantine/core';
+import '../main.css';
+import { skills } from '../Portfolio';
 
 
+
+const useStyles = createStyles((theme) =>({
+  button: {
+    backgroundColor: 'black',
+    color: 'white',
+    textAlign: 'center',
+    fontFamily: 'Poppins',
+    fontWeight: 600,
+    borderRadius: '15px',
+    minHeight: '50px',
+    minWidth: '8rem',
+    '&:hover': {
+      backgroundColor: '#20b2aa',
+      transition: '0.4s',
+      color: 'white',
+    }
+  },
+  skill: {
+    fontFamily: "Poppins",
+    fontWeight: 600,
+    fontSize: '1.5rem',
+    textAlign: 'center',
+  }
+}));
 
 export const Skills = () => {
+  const { classes } = useStyles();
+
+
+  const skillsButtons = skills.map((skill) => (
+  
+      <UnstyledButton
+        className={classes.button}
+      >
+        {skill}
+      </UnstyledButton>
+
+  ));
+
   return (
-    <>
-    <Grid>
-      <div id="languages-list" >
-      
-        <Paper className="language-list-item" radius="md" shadow="xl" p='lg' withBorder><h4 style={{fontSize: '1.25rem'}}>HTML</h4></Paper>
-   
-        <Paper className="language-list-item" radius="md" shadow="xl" p='lg' withBorder><h4 style={{fontSize: '1.25rem'}}>CSS</h4></Paper>
-  
-        <Paper className="language-list-item" radius="md" shadow="xl" p='lg' withBorder><h4 style={{fontSize: '1.25rem'}}>JavaScript</h4></Paper>
-   
-        <Paper className="language-list-item" radius="md" shadow="xl" p='lg' withBorder><h4 style={{fontSize: '1.25rem'}}>TypeScript</h4></Paper>
-  
-        <Paper className="language-list-item" radius="md" shadow="xl" p='lg' withBorder><h4 style={{fontSize: '1.25rem'}}>React</h4></Paper>
 
-        <Paper className="language-list-item" radius="md" shadow="xl" p='md' withBorder><h4 style={{fontSize: '1.25rem'}}>Redux</h4></Paper>
-      
-        <Paper className="language-list-item" radius="md" shadow="xl" p='lg' withBorder><h4 style={{fontSize: '1.25rem'}}>Python</h4></Paper>
-  
-        <Paper className="language-list-item" radius="md" shadow="xl" p='lg' withBorder><h4 style={{fontSize: '1.25rem'}}>Flask</h4></Paper>
-    
-        <Paper className="language-list-item" radius="md" shadow="xl" p='lg' withBorder><h4 style={{fontSize: '1.25rem'}}>SQL</h4></Paper>
-   
-        <Paper className="language-list-item" radius="md" shadow="xl" p='lg' withBorder><h4 style={{fontSize: '1.25rem'}}>NOSQL</h4></Paper>
-  
-        <Paper className="language-list-item" radius="md" shadow="xl" p='lg' withBorder><h4 style={{fontSize: '1.25rem'}}>PostgreSQL</h4></Paper>
-  
-        <Paper className="language-list-item" radius="md" shadow="xl" p='md' withBorder><h4 style={{fontSize: '1.25rem'}}>AWS</h4></Paper>
-
-        <Paper className="language-list-item" radius="md" shadow="xl" p='md' withBorder><h4 style={{fontSize: '1.25rem'}}>CI/CD</h4></Paper>
-  
-    
-        <Paper className="language-list-item" radius="md" shadow="xl" p='md' withBorder><h4 style={{fontSize: '1.25rem'}}>Git/Github</h4></Paper>
-    
-    </div>
-
+    <Grid grow style={{padding: '3rem', width: '100%', textAlign: 'center'}}>
+      <Grid.Col>
+      {skillsButtons}
+      </Grid.Col>
+    </Grid>
  
-
-</Grid>
-    </>
-  )
-}
-
+  );
+};
