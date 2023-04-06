@@ -17,18 +17,12 @@ import '../main.css'
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
-    minHeight: 400,
+    alignContent: 'center',
+    border: '2px solid white',
     boxSizing: 'border-box',
-    justifyContent: 'center',
-    // backgroundImage: `linear-gradient(-60deg, ${theme.colors[theme.primaryColor][4]} 0%, ${
-    //   theme.colors[theme.primaryColor][7]
-    // } 100%)`,
+    marginTop: '1rem',
     borderRadius: theme.radius.lg,
-    padding: `calc(${theme.spacing.xl} * 2.5) 0`,
-
-    [theme.fn.smallerThan('sm')]: {
-      padding: `calc(${theme.spacing.xl} * 1.5)`,
-    },
+    padding: '3rem',
   },
 
   title: {
@@ -52,6 +46,7 @@ const useStyles = createStyles((theme) => ({
     padding: theme.spacing.xl,
     borderRadius: '13px',
     boxShadow: theme.shadows.lg,
+    margin: '1rem',
   },
 
   social: {
@@ -66,7 +61,7 @@ const useStyles = createStyles((theme) => ({
     backgroundColor: theme.white,
     borderColor: theme.colors.gray[4],
     color: theme.black,
-    borderRadius: theme.radius.lg,
+    borderRadius: theme.radius.md,
     padding: '5px 10px',
 
     '&::placeholder': {
@@ -108,7 +103,7 @@ export const GetInTouch = () => {
     </ActionIcon>
   ));
   return (
-        <div className={classes.wrapper}>
+        <div className={classes.wrapper} style={{marginTop: '1rem'}}>
       <SimpleGrid cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
         <div>
           <Title className={classes.title}>Contact me</Title>

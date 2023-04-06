@@ -6,6 +6,8 @@
 body {
   background-color: black;
   margin: 25px;
+  min-width: 454px;
+  max-width: 1400px;
 }
 
 @font-face {

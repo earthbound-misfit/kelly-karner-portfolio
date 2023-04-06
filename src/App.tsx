@@ -23,12 +23,14 @@ const App = () => {
           <Contact />
         </Col>
        
+        <Skills />
+ 
         <span id="projects-container" style={{justifyContent: 'center', width: '100%', flexWrap: 'wrap'}}>
           <ProjectsContainer />
         </span>
-         {/* <Col xs={12} style={{backgroundColor: 'white', borderRadius: '10px', marginTop: '20px', overflow: 'hidden'}}> */}
-          <Skills />
-        {/* </Col> */}
+      
+          
+   
 
         <Col xs={12} style={{backgroundColor: 'black', borderRadius: '10px'}}>
           <GetInTouch />
