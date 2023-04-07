@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Paper, createStyles } from '@mantine/core';
 
 const useStyles = createStyles({
@@ -15,7 +16,9 @@ const useStyles = createStyles({
       backgroundColor: 'black',
       color: 'white',
       transition: '0.3s',
-      border: '1.5px solid black',
+    },
+    '&:visited': {
+      color: 'black',
     }
   }
 })
@@ -36,7 +39,7 @@ export const Contact = () => {
       <div style={{alignSelf: 'center', fontSize: '1.2rem'}}>
   
           <Paper className={classes.buttonStyling}>
-            Get in Touch
+            <Link style={{textDecoration: 'none'}} to="/getintouch">Get in Touch</Link>
           </Paper>
 
       </div>

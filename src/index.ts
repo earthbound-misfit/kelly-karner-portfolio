@@ -1,3 +1,4 @@
+export * from './NavMenu'
 export * from './About'
 export * from './Contact'
 export * from './Footer'

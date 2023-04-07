@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { createStyles, SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/core';
 import { projects } from '../Portfolio';
-import '../main.css'
+import '../main.css';
+import { ProjectsHeader } from '../ProjectsHeader';
 
 
 
@@ -63,6 +64,7 @@ export const ProjectsContainer = () => {
   ))
   return (
     <>
+      <ProjectsHeader />
       <div style={{marginTop: '10px'}}>
       <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
         {projectCards}
