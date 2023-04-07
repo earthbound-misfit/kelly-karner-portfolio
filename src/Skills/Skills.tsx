@@ -8,15 +8,16 @@ import { skills } from '../Portfolio';
 const useStyles = createStyles((theme) =>({
   wrapper: {
     alignContent: 'center',
-    border: '2px solid white',
+    border: '4px solid white',
     boxSizing: 'border-box',
-    marginTop: '1rem',
+    margin: '20px 0 10px 0',
     borderRadius: theme.radius.lg,
+    backgroundColor: 'black',
   },
   button: {
-    backgroundColor: 'black',
-    color: 'white',
-    border: '1px solid white',
+    backgroundColor: 'white',
+    color: 'black',
+    // border: '1px solid white',
     textAlign: 'center',
     margin: '.5rem',
     fontFamily: 'Poppins',
@@ -28,8 +29,8 @@ const useStyles = createStyles((theme) =>({
       // backgroundColor: '#20b2aa',
       transition: '0.4s',
       // color: 'white',
-      backgroundColor: 'white',
-      color: 'black',
+      backgroundColor: 'black',
+      color: 'white',
     }
   },
   skill: {
@@ -57,7 +58,7 @@ export const Skills = () => {
   return (
     <Group className={classes.wrapper}>
     <Grid grow style={{padding: '3rem', textAlign: 'center'}}>
-      <Grid.Col>
+      <Grid.Col span={6} >
       {skillsButtons}
       </Grid.Col>
     </Grid>

@@ -15,19 +15,19 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    title: 'E-Commerce Web Application',
+    title: 'WanderLust',
     image: './src/assets/img/wanderlust.png',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'E-Commerce web application',
     stack: ['React', 'JavaScript', 'Sass', 'Redux', ''],
     sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    livePreview: 'https://jazzy-chimera-15d9ae.netlify.app/',
   },
   {
-    title: 'CarShare Application',
+    title: 'Yewy',
     image: './src/assets/img/carshare.png',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'Car sharing application',
     stack: ['TypeScript', 'React', 'HTML', 'CSS', 'Material UI', 'Python', 'Flask'],
     sourceCode: 'https://github.com/earthbound-misfit/carshare-dashboard',
     livePreview: 'https://classic-carshare-react.firebaseapp.com/',
@@ -45,7 +45,7 @@ const projects = [
     title: 'BookWorm',
     image: './src/assets/img/bookworm.png',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'Book sharing application',
     stack: ['TypeScript', 'React', 'Python', 'Flask', 'CSS', 'Material UI'],
     sourceCode: 'https://github.com/earthbound-misfit/bookshare-react-app',
     livePreview: 'https://bookworm-1e548.firebaseapp.com/',

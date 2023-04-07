@@ -6,7 +6,7 @@
 body {
   background-color: black;
   margin: 25px;
-  min-width: 454px;
+  min-width: 375px;
   max-width: 1400px;
 }
 
@@ -52,27 +52,31 @@ body {
   }
 }
 
-#project-card:after {
+#project-card:hover {
+  
+}
+
+/* #project-card:after {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255, 253, 253, 0.724);
 	-webkit-transition: none;
 	   -moz-transition: none;
 	        transition: none;
-}
-
+} */
+/* 
 #project-card:hover:after {
   width: 120%;
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(255,255,255,00);
   
 	-webkit-transition: all 0.4s ease-in-out;
 	   -moz-transition: all 0.4s ease-in-out;
 	        transition: all 0.4s ease-in-out;
-}
+} */
 
 .contact-and-icons {
   justify-content: center;

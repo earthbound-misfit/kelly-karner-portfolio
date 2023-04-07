@@ -7,22 +7,35 @@ import '../main.css'
 
 
 const useStyles = createStyles((theme) => ({
+  wrapper: {
+    borderRadius: theme.radius.lg,
+  },
   card: {
     transition: 'transform 150ms ease, 150ms ease',
-    margin: ' 10px 0 0 0',
+    minHeight: '420px',
+    backgroundColor: 'white',
+    color: 'black',
+    display: 'grid',
+    borderRadius: theme.radius.lg,
 
     '&:hover': {
-      transform: 'scale(1.02)',
+      backgroundColor: 'black',
+      color: 'white',
+      borderRadius: theme.radius.md,
     },
     
   },
 
   title: {
-    fontFamily: `Poppins, ${theme.fontFamily}`,
+    fontFamily: "Caveat",
     fontWeight: 600,
-    fontSize: '1.5rem',
+    fontSize: '4rem',
     textAlign: 'center',
-    borderRadius: '25px'
+    borderRadius: '25px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignSelf: 'center'
+
   },
   
 }));
@@ -33,14 +46,14 @@ export const ProjectsContainer = () => {
   const {classes} = useStyles();
 
   const projectCards = projects.map((project) => (
-    <div>
-    <Card id="project-card" key={project.title} radius="lg" component="a" href="#" className={classes.card}>
-      {/* <Text className={classes.title} mt={5}>
+    <div className={classes.wrapper}>
+    <Card id="project-card" key={project.title} radius="lg" component="a" href={project.livePreview} className={classes.card}>
+      <Text className={classes.title} mt={5}>
         {project.title}
-        </Text> */}
+        </Text>
       {/* <AspectRatio ratio={1920 / 1080}> */}
         
-        <Image radius="lg" src={project.image} />
+        {/* <Image radius="lg" src={project.image} /> */}
       {/* </AspectRatio> */}
     </Card>
      

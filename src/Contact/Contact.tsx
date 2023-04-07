@@ -1,17 +1,18 @@
 import React from 'react';
-import { UnstyledButton, createStyles } from '@mantine/core';
+import { Paper, createStyles } from '@mantine/core';
 
 const useStyles = createStyles({
   buttonStyling: {
-    borderRadius: '25px', 
-    backgroundColor: 'black',
+    borderRadius: '13px', 
+    backgroundColor: 'white',
     fontFamily: 'Poppins',
+    height: '100%',
     fontWeight: 600, 
-    color: 'white',
+    color: 'black',
     padding: '10px 30px',
     '&:hover': {
-      backgroundColor: 'white',
-      color: 'black',
+      backgroundColor: 'black',
+      color: 'white',
       transition: '0.3s',
       border: '1.5px solid black',
     }
@@ -24,17 +25,19 @@ export const Contact = () => {
   return (
     <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', height: '100%'}}>
       <div style={{alignSelf: 'center', fontSize: '1.4rem'}}>
-        <a href="src/assets/pdf/KellyKarner_SoftwareDeveloper_Resume.pdf">
-          <UnstyledButton className={classes.buttonStyling}>
-            Resume
-          </UnstyledButton>
+        <a style={{textDecoration: 'none'}} href="src/assets/pdf/KellyKarner_SoftwareDeveloper_Resume.pdf">
+          <Paper className={classes.buttonStyling}>
+            View Resume
+          </Paper>
         </a>
         
       </div>
       <div style={{alignSelf: 'center', fontSize: '1.4rem'}}>
-        <UnstyledButton className={classes.buttonStyling}>
-          Get in Touch
-        </UnstyledButton>
+  
+          <Paper className={classes.buttonStyling}>
+            Get in Touch
+          </Paper>
+
       </div>
 
     </div>

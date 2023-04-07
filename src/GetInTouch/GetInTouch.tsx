@@ -17,11 +17,13 @@ import '../main.css'
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
-    border: '2px solid white',
-    boxSizing: 'border-box',
+    border: '4px solid white',
     marginTop: '1rem',
     borderRadius: theme.radius.lg,
-    padding: '3rem',
+    padding: '2rem',
+    alignSelf: 'center',
+    width: '100%',
+   
  
   },
 
@@ -31,7 +33,8 @@ const useStyles = createStyles((theme) => ({
     lineHeight: 1,
     textAlign: 'center',
     justifyContent: 'center',
-    marginTop: '4rem'
+    marginTop: '1rem',
+    
   },
 
   description: {
@@ -45,11 +48,9 @@ const useStyles = createStyles((theme) => ({
 
   form: {
     backgroundColor: theme.black,
-   
-    padding: theme.spacing.xl,
+    minWidth: '2.5rem',
+    padding: theme.spacing.sm,
     borderRadius: '13px',
-    boxShadow: theme.shadows.lg,
-    margin: '1rem',
   },
 
   social: {
@@ -77,19 +78,20 @@ const useStyles = createStyles((theme) => ({
   },
 
   send: {
-    backgroundColor: 'black',
+    backgroundColor: 'white',
     borderRadius: '25px',
-    color: 'white',
+    color: 'black',
     width: '100%',
     textAlign: 'center',
     minHeight: '50px',
     fontFamily: 'Poppins',
     fontWeight: 600,
-    border: '1px solid white',
+    // border: '2px solid white',
+    marginTop: '1.5rem',
    
     '&:hover': {
-      backgroundColor: '#fff',
-      color: theme.black,
+      backgroundColor: 'black',
+      color: theme.white,
       transition: '0.3s',
     }
 
@@ -107,13 +109,11 @@ export const GetInTouch = () => {
     </ActionIcon>
   ));
   return (
-        <div className={classes.wrapper} style={{marginTop: '1rem'}}>
-      <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
-        <div>
-          <Title className={classes.title}>Get in Touch</Title>
-        
+   
 
-          {/* <ContactIconsList variant="white" /> */}
+      <SimpleGrid className={classes.wrapper} cols={2} spacing={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
+         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%'}}>
+          <Title className={classes.title}>Get in Touch</Title>
 
           <Group className="contact-and-icons" mt="xl">{icons}</Group>
         </div>
@@ -146,7 +146,8 @@ export const GetInTouch = () => {
           </Group>
         </div>
       </SimpleGrid>
-    </div>
+
+
   )
 }
 
