@@ -6,10 +6,11 @@ const useStyles = createStyles({
     borderRadius: '13px', 
     backgroundColor: 'white',
     fontFamily: 'Poppins',
+    textAlign: 'center',
     height: '100%',
     fontWeight: 600, 
     color: 'black',
-    padding: '10px 30px',
+    padding: '20px 27px',
     '&:hover': {
       backgroundColor: 'black',
       color: 'white',
@@ -24,7 +25,7 @@ export const Contact = () => {
 
   return (
     <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', height: '100%'}}>
-      <div style={{alignSelf: 'center', fontSize: '1.4rem'}}>
+      <div style={{alignSelf: 'center', fontSize: '1.2rem'}}>
         <a style={{textDecoration: 'none'}} href="src/assets/pdf/KellyKarner_SoftwareDeveloper_Resume.pdf">
           <Paper className={classes.buttonStyling}>
             View Resume
@@ -32,7 +33,7 @@ export const Contact = () => {
         </a>
         
       </div>
-      <div style={{alignSelf: 'center', fontSize: '1.4rem'}}>
+      <div style={{alignSelf: 'center', fontSize: '1.2rem'}}>
   
           <Paper className={classes.buttonStyling}>
             Get in Touch

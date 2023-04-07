@@ -70,6 +70,8 @@ const skills = [
   'Git/Github',
   'AWS',
   'Redux',
+  'Firebase',
+  'Netlify'
 ]
 
 const contact = {

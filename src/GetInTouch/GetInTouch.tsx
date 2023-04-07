@@ -19,6 +19,7 @@ const useStyles = createStyles((theme) => ({
   wrapper: {
     border: '4px solid white',
     marginTop: '1rem',
+    marginBottom: '1rem',
     borderRadius: theme.radius.lg,
     padding: '2rem',
     alignSelf: 'center',
@@ -79,7 +80,7 @@ const useStyles = createStyles((theme) => ({
 
   send: {
     backgroundColor: 'white',
-    borderRadius: '25px',
+    borderRadius: theme.radius.md,
     color: 'black',
     width: '100%',
     textAlign: 'center',
@@ -109,7 +110,7 @@ export const GetInTouch = () => {
     </ActionIcon>
   ));
   return (
-   
+    <>
 
       <SimpleGrid className={classes.wrapper} cols={2} spacing={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
          <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%'}}>
@@ -146,7 +147,10 @@ export const GetInTouch = () => {
           </Group>
         </div>
       </SimpleGrid>
-
+      <div style={{color: 'white', textAlign: 'center', margin: '2rem'}}>
+      <small>© 2023 | Created by Kelly Karner</small>
+      </div>
+    </>
 
   )
 }

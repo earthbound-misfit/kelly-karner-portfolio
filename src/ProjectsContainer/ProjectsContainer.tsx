@@ -22,6 +22,7 @@ const useStyles = createStyles((theme) => ({
       backgroundColor: 'black',
       color: 'white',
       borderRadius: theme.radius.md,
+      transition: '0.3s'
     },
     
   },

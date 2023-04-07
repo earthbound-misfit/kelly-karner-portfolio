@@ -17,7 +17,7 @@ const App = () => {
     <>
       <Grid style={{height: '100vh', margin: '10px'}}>
        
-        <Col xs={12} style={{height: '15rem', backgroundColor: 'white', borderRadius: '10px', marginBottom: '20px'}}>
+        <Col xs={12} style={{height: '15rem', border: '4px solid white', borderRadius: '13px'}}>
           <About />
         </Col>
         <Col xs={12} style={{height: '6rem', backgroundColor: 'black'}}>

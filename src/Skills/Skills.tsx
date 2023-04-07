@@ -10,21 +10,26 @@ const useStyles = createStyles((theme) =>({
     alignContent: 'center',
     border: '4px solid white',
     boxSizing: 'border-box',
-    margin: '20px 0 10px 0',
+    margin: '0 auto',
     borderRadius: theme.radius.lg,
     backgroundColor: 'black',
+    // display: 'flex',
+    // flexFlow: 'row',
+    // flexWrap: 'wrap',
   },
   button: {
     backgroundColor: 'white',
     color: 'black',
     // border: '1px solid white',
     textAlign: 'center',
-    margin: '.5rem',
+    margin: '.3rem',
     fontFamily: 'Poppins',
+    fontSize: '1.2rem',
     fontWeight: 600,
-    borderRadius: '40px',
-    minHeight: '45px',
+    borderRadius: theme.radius.lg,
     minWidth: '8rem',
+    minHeight: '55px',
+    padding: '0.5rem',
     '&:hover': {
       // backgroundColor: '#20b2aa',
       transition: '0.4s',
@@ -36,8 +41,8 @@ const useStyles = createStyles((theme) =>({
   skill: {
     fontFamily: "Poppins",
     fontWeight: 600,
-    fontSize: '1.5rem',
     textAlign: 'center',
+    // flex: '1 225px',
   }
 }));
 
@@ -57,8 +62,8 @@ export const Skills = () => {
 
   return (
     <Group className={classes.wrapper}>
-    <Grid grow style={{padding: '3rem', textAlign: 'center'}}>
-      <Grid.Col span={6} >
+    <Grid grow justify="space-between" style={{padding: '3rem', textAlign: 'center'}}>
+      <Grid.Col>
       {skillsButtons}
       </Grid.Col>
     </Grid>
