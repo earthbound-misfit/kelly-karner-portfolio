@@ -78,7 +78,6 @@ const useStyles = createStyles((theme) => ({
 }));
 
 interface NavMenuProps {
-
   tabs: string[];
 }
 

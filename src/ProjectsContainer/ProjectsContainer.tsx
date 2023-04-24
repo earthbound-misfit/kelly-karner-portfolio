@@ -10,6 +10,7 @@ import { ProjectsHeader } from '../ProjectsHeader';
 const useStyles = createStyles((theme) => ({
   wrapper: {
     borderRadius: theme.radius.lg,
+    margin: '0 7.8px'
   },
   card: {
     transition: 'transform 150ms ease, 150ms ease',

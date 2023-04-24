@@ -4,7 +4,6 @@ import { Paper, createStyles } from '@mantine/core';
 const useStyles = createStyles({
   paperStyling: {
     backgroundColor: 'black',
-
     borderRadius: '13px',
     fontFamily: 'Poppins',
     textAlign: 'center',
@@ -13,7 +12,7 @@ const useStyles = createStyles({
     fontSize: '2rem',
     color: 'white',
     padding: '0 0 40px 0',
-
+    marginTop: '50px',
     '&:hover': {
       // backgroundColor: 'white',
       // color: 'black',
@@ -23,16 +22,17 @@ const useStyles = createStyles({
   }
 })
 
-export const ProjectsHeader = () => {
+export const SkillsHeader = () => {
   const { classes } = useStyles()
 
   return (
  
         <>
-     
+         
           <Paper className={classes.paperStyling}>
-            Projects
+            Skills
           </Paper>
+    
         </>
         
 
@@ -41,6 +41,7 @@ export const ProjectsHeader = () => {
 
   )
 }
+
 
 
 

@@ -27,13 +27,6 @@ export const About = () => {
       <div className={classes.wrapper}>
         <div style={{display: 'flex', flexDirection: 'row', padding: '2rem'}}>
 
-          {/* <h3 style={{ width: '100%', alignSelf: 'flex-start'}}>
-            KK
-          </h3>
-          <h3 style={{alignSelf: 'flex-start'}}>
-            Projects
-          </h3> */}
-
         </div>
 
         <div style={{textAlign: 'center'}}>

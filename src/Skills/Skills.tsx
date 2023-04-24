@@ -2,17 +2,19 @@
 import { Grid, Col, Group, Container, createStyles, Paper, UnstyledButton, Text } from '@mantine/core';
 import '../main.css';
 import { skills } from '../Portfolio';
+import { SkillsHeader } from '../SkillsHeader';
 
 
 
 const useStyles = createStyles((theme) =>({
   wrapper: {
     alignContent: 'center',
-    border: '4px solid white',
+    // border: '4px solid white',
     boxSizing: 'border-box',
     margin: '0 auto',
     borderRadius: theme.radius.lg,
     backgroundColor: 'black',
+    maxWidth: '1400px',
     // display: 'flex',
     // flexFlow: 'row',
     // flexWrap: 'wrap',
@@ -61,12 +63,17 @@ export const Skills = () => {
   ));
 
   return (
+    <>
+   <div style={{ display: 'flex', flexDirection: 'column'}}>
+    <SkillsHeader />
     <Group className={classes.wrapper}>
-    <Grid grow justify="space-between" style={{padding: '3rem', textAlign: 'center'}}>
+    <Grid grow justify="space-between" style={{paddingBottom: '3rem', textAlign: 'center'}}>
       <Grid.Col>
       {skillsButtons}
       </Grid.Col>
     </Grid>
     </Group>
+    </div>
+    </>
   );
 };
