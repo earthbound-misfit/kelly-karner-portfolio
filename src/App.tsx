@@ -8,6 +8,7 @@ import {Contact} from './Contact';
 import { ProjectsHeader } from './ProjectsHeader';
 import { ProjectsContainer } from './ProjectsContainer';
 import { GetInTouch } from './GetInTouch';
+import { ScrollToTop } from './ScrollToTop';
 import { Footer } from './Footer';
 import './main.css'
 import { TabsList } from '@mantine/core/lib/Tabs/TabsList/TabsList';
@@ -40,6 +41,7 @@ const App = () => {
         </Col>
 
         {/* <Footer /> */}
+      
       </Grid>
     </>
   )

@@ -13,6 +13,7 @@ import {
 } from '@mantine/core';
 import { IconBrandLinkedin, IconBrandInstagram, IconBrandGithub } from '@tabler/icons-react';
 import '../main.css'
+import { ScrollToTop } from '../ScrollToTop';
 
 
 const useStyles = createStyles((theme) => ({
@@ -148,7 +149,9 @@ export const GetInTouch = () => {
         </div>
       </SimpleGrid>
       <div style={{color: 'white', textAlign: 'center', margin: '2rem'}}>
+        <ScrollToTop />
       <small>© 2023 | Created by Kelly Karner</small>
+      
       </div>
     </>
 
